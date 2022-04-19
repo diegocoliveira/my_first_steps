@@ -1,1 +1,23 @@
 Olá GitHub!!!
+
+Adicionando materias de estudo sobre git:
+
+https://www.youtube.com/watch?v=UBAX-13g8OM&list=PLhkO7OMKgT_rqwGYldqcFxyN4yjFgmDh8
+
+https://learngitbranching.js.org/?locale=pt_BR
+https://githowto.com/pt-BR
+
+https://www.conventionalcommits.org/pt-br/v1.0.0/
+https://blog.rocketseat.com.br/como-fazer-um-bom-readme/#-demonstra-o-da-aplica-o
+https://github.com/stone-payments/stoneco-best-practices/blob/master/gitStyleGuide/README.md
+
+https://github.com/janascher/guia-git-github
+
+comandos básicos:
+
+criando branch: 
+git checkout -b "nova-funcionalidade"
+
+push na branch:
+
+git push origin nova-funcionalidade
