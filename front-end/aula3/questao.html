@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <h1>Hard Skills</h1>
+    <h2>Módulo 3 - HTML</h2>
+    <h3>Linguagem de notação HTML - Part 2</h3>
+    <br/> 
+    <h3>Exemplos de tags "básicas"</h3>
+    <table >
+        <theard>
+            <tr>
+                <th>Tag</th>
+                <th>Descrição</th>
+            </tr>
+        </theard>
+        <!-- atalho para criar tbody>tr*4>td*2 -->
+        <tbody>
+            <tr>
+                <td>&ltb&gt**</td>
+                <td>Define o <b>Texto</b> em negrito</td>
+            </tr>
+            <tr>
+                <td>&ltstrong&gt**</td>
+                <td>Define o <strong>Texto</strong> forte</td>
+            </tr>
+            <tr colspan="2" style="color: red;">
+                <td>&ltbig&gt*</td>
+                <td>Define o <big>Texto</big> grande </td>
+            </tr>
+            <tr>
+                <td>&ltsmall&gt</td>
+                <td>Define o <small>Texto</small> pequeno</td>
+            </tr>
+            <tr>
+                <td>&ltem&gt**</td>
+                <td>Define o <em>Texto</em> enfatizado</td>
+            </tr>
+            <tr>
+                <td>&lti&gt**</td>
+                <td>Define o <i>Texto</i> em itálico</td>
+            </tr>
+            <tr>
+                <td>&ltsub&gt</td>
+                <td>Define o <sub>Text</sub> subescrito</td>
+            </tr>
+            <tr>
+                <td>&ltsup&gt</td>
+                <td>Define o <sup>Texto</sup> supescrito</td>
+            </tr>
+            <tr>
+                <td>&ltins&gt</td>
+                <td>Define o <ins>Texto</ins> inserido</td>
+            </tr>
+            <tr>
+                <td>&ltdel&gt</td>
+                <td>Define o <del>Texto</del> cancelado</td>
+            </tr>
+           
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" style="color: red;">
+                    *Descontinuado no HTML5
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>
+        <span style="background-color:greenyellow" >*A tag <b>&ltBIG&gt</b> foi descontinuada em HTML5</span>, enquanto a tag <b>&ltSMALL&gt</b> ainda é útil porque a tag <b>&ltSMALL&gt</b> é freqüentemente usada para representar pequenas estampas como notas de rodapé, avisos de direitos autorais, comentários, etc. Já existem muitas alternativas para a tag <b>&ltBIG&gt</b> disponíveis como <b>&ltH1&gt</b>, <b>&ltH2&gt</b> e assim por diante. Em HTML5, em vez de usar <b>&ltBIG&gt</b>, você pode usar CSS para criar textos maiores.
+    </p>
+    <p>
+        **Existem alguns elementos no <b>HTML</b> que parecem ser redundantes, como por exemplo a tag <strong>STRONG</strong> e a tag <em>EM</em>. Se você já tentou usá-las, percebeu que visualmente elas não mostram nenhuma diferença das tags <b>B</b> e <i>I</i>. Apenas visualmente. <br/>
+        <span style="background-color:greenyellow" >Estas tags tem uma função semântica que é percebida apenas pelos deficientes visuais (pelo menos deveriam).</span>Visualmente o STRONG e o B não tem nada de diferente, eles apenas marcam uma parte do texto como negrito. <span style="background-color:greenyellow" >Mas a diferença entre os dois é invisivel para você.</span> <br/>
+        Veja… Quando você usa STRONG, você dá um significado para aquela parte especifica do texto. Você diz que ela deve ser lida com mais força, com mais intensidade. Já com o elemento B você apenas marca em negrito o texto, e só. Ou seja, quando um browser para cegos (acho que ainda não existe nenhum assim) lê aquela parte com STRONG, a “voz dele” será alterada, ele passará a ler com mais força, já com o B isso não deve acontecer. A mesma coisa acontece com o EM e o I. Quando uma parte do texto é marcada com EM, você dá um significado ao texto, você diz que aquela determinada parte deve ser lida com mais ênfase.
+    </p>
+    <p>
+        <a href="https://github.com/" target="_blank"> 
+            <img src="https://icdn.enterinit.com/wp-content/uploads/2017/05/26081202/github-logo.png" alt="Logo GitHub" width="100" >
+        </a>
+        <br/>
+        Atividade salva <a href="https://github.com/diegocoliveira/my_first_steps">nesse repositório</a> no github
+    </p>
+</body>
+</html>
