@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Aula 11 - Usando Canvas" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Desenhando usando Canvas" />
+  <title>Aula 10</title>
+
+
+</head>
+
+<body>
+  <h3>Linguagem de notação HTML - Part 10 </h3>
+  <section>
+    <h4>Questão 1) Usando Canvas</h4>
+
+    <canvas id="myCanvas" width="600" height="400">Seu navegador não suporta a tag canvas.</canvas>
+
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.fillRect(0, 0, 570, 370);
+      ctx.strokeStyle = "white";
+      ctx.strokeStyle = "white";
+      ctx.beginPath();
+      ctx.moveTo(10, 10);
+      ctx.lineTo(360,10); ctx.lineTo(360,60); ctx.lineTo(80,310); ctx.lineTo(310,310);
+      ctx.lineTo(310,10); ctx.lineTo(360,10); ctx.lineTo(360,310); ctx.lineTo(560,310);
+      ctx.lineTo(560,360); ctx.lineTo(10,360); ctx.lineTo(10,310); ctx.lineTo(290,60);
+      ctx.lineTo(10,60);
+      ctx.closePath();
+      ctx.stroke();
+    </script>
+    ctx.lineTo(,);
+    <!-- 35,0 35,30 55,30 55,35 0,35 0,30 28,5 0,5"></polygon-->
+  </section>
+
+
+
+</body>
+
+</html>
