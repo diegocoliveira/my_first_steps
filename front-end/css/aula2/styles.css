@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+h3 {
+    color: brown;
+}
+
+.classeElementoSpan {
+    font-size: 30px;
+}
+
+.primeira {
+    text-align: left;
+}
+
+.segunda {
+    text-align: right;
+}
+
+.primeira.segunda {
+    text-align: center;
+}
+
+#idSpan {
+    color: pink;
+}
+
+/*no inicio*/
+span[diego^="legal"] {
+    color: red;
+}
+
+span[diego|="legal"] {
+    text-decoration-line: underline;
+}
+/*no fim*/
+span[diego$="legal"] {
+    color: green;
+}
+
+span[diego="legal"] {
+    color: blue;
+}
+
+span[diego*="legal"]::after {
+    content: " =D";
+
+}
+
+p::first-line{
+    background-color: black;
+    color:white;
+}
+
+/* EVENTO AO PASSAR O MOUSE EM CIMA DO ELEMENTO */
+a:hover {
+    background: red;
+    font-size: 20px;
+}
+
+a:link {
+    color: green;
+    text-decoration-line: underline;
+}
+
+/* ENTRE NO LINK */
+a:visited {
+    color: orange;
+    text-decoration-line: line-through;
+}
+
+/* CLIQUE E SEGURE */
+a:active {
+    background: blue;
+    font-size: 40px;
+}
+
+a::first-line{
+    background-color: black;
+}
+
+/*descendente */
+div span{
+    background-color: yellowgreen;
+}
+
+/*filho imediato*/
+div > span{
+    text-decoration-line: underline;
+}
+
+/* irmão logo posterior*/
+p + span{
+    font-size: 20px;
+}
+
+/* todos os irmãos posteriores*/
+p ~ span{
+    color:red;
+}
