@@ -1,0 +1,56 @@
+section>section {
+    background-color: black;
+    display: flex;
+    color: white;
+}
+
+.externa {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: orange;
+    width: 300px;
+}
+
+.exemplo {
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: yellow;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+.interna {
+    border: 0px;
+    border-style: solid;
+    border-color: black;
+    background-color: purple;
+    text-align: center;
+}
+
+.bloco1, .bloco2 {
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 50px;
+}
+.bloco2 {
+    font-size: 100px;
+}
+
+.visible{
+    overflow: visible;
+}
+
+.hidden {
+    overflow: hidden;
+}
+.scroll {
+    overflow: scroll;
+}
+.auto{
+    overflow: auto;
+}
