@@ -1,0 +1,36 @@
+main {
+    margin: 5px;
+    padding: 0px;
+    border: 2px solid;
+    border-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Questão 1 background*/
+.background{
+    margin: 10px auto;
+    border: 1px solid;
+    border-color: black;
+    width: 600px;
+    height: 300px;
+}
+
+
+
+/*Questão2) bordas*/
+
+.bloco{
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px 0;
+    text-align:center;
+    border: 5px solid;
+    border-color: black;
+    color: white;
+    background-color: cadetblue;
+    width: 120px;
+    
+}
+
+/*tipos, cores, espessuras e arredondamentos de bordas*/
