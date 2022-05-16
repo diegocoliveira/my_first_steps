@@ -9,6 +9,8 @@ main {
 
 /*Questão 1 background*/
 .background{
+    padding: 5px;
+    background-color:rgb(25, 26, 31);
     margin: 10px auto;
     border: 1px solid;
     border-color: black;
@@ -43,6 +45,18 @@ main {
     background-repeat: repeat-x;
     color: white;
     text-shadow: 2px 2px 8px black;
+}
+
+.foto{
+    margin: 10px 75px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    background-image: url("https://avatars.githubusercontent.com/u/23386722?v=4");
+    border-radius: 50%;
+    box-shadow: 10px 5px 50px 10px white;
 }
 
 
