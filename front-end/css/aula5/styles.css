@@ -1,0 +1,78 @@
+main {
+    margin: 5px;
+    padding: 0px;
+    border: 2px solid;
+    border-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Questão 1 background*/
+.background{
+    padding: 5px;
+    background-color:rgb(25, 26, 31);
+    margin: 10px auto;
+    border: 1px solid;
+    border-color: black;
+    width: 600px;
+    height: 300px;
+    color: white;
+}
+.cor-solida{
+    background-color:rgb(25, 26, 31);
+}
+
+.cor-solida-transparencia{
+    background-color:rgb(25, 26, 31, 0.6);
+}
+
+.cor-solida-transparencia{
+    background-color:rgb(25, 26, 31, 0.6);
+}
+
+.imagem{
+    background-image: url("./schnauzer-gigante.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:rgb(25, 26, 31, 0.6);
+    text-shadow: 2px 2px 8px black;
+}
+
+.imagem-repetida{
+    background-image: url("./schnauzer-filhote.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+.foto{
+    margin: 10px 75px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    background-image: url("https://avatars.githubusercontent.com/u/23386722?v=4");
+    border-radius: 50%;
+    box-shadow: 10px 5px 50px 10px white;
+}
+
+
+/*Questão2) bordas*/
+
+.bloco{
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px 0;
+    text-align:center;
+    border: 5px solid;
+    border-color: black;
+    color: white;
+    background-color: cadetblue;
+    width: 120px;
+    
+}
+
+/*tipos, cores, espessuras e arredondamentos de bordas*/
