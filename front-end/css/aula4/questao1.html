@@ -11,23 +11,32 @@
 
 <body>
     <h3>Questão 1) background (cor sólida”, “cor sólida com transparência”, “gradiente de
-        cores”, “imagem única”, “imagem repetida”)<h3 >
+        cores”, “imagem única”, “imagem repetida”)<h3>
     <main>
-        <div class="background" >
-            border-style: none;
+        <div class="background cor-solida">
+            background-color:rgb(25, 26, 31);
         </div>
-        <div class="background" >
-            border-style: hidden;
+        <div class="background cor-solida-transparencia">
+            background-color:rgb(25, 26, 31, 0.6);
         </div>
-        <div class="background" >
-            border-style: dotted;
+        <div class="background imagem">
+            background-color:rgb(25, 26, 31, 0.6); <br/>
+            background-image: url("./schnauzer-gigante.jpg"); <br/>
+            background-size: contain; <br/>
+            background-repeat: no-repeat; <br/>
+            background-position: center; <br/>
+            text-shadow: 2px 2px 8px black;
         </div>
-        <div class="background">
-            border-style: dashed;
+        <div class="background imagem-repetida">
+            background-image: url("./schnauzer-filhote.jpg"); <br/>
+            background-size: contain; <br/>
+            background-repeat: repeat-x; <br/>
+            color: white; <br/>
+            text-shadow: 2px 2px 8px black;
         </div>
-      
+
     </main>
-  
+
 </body>
 
 </html>

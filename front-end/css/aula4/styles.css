@@ -14,8 +14,36 @@ main {
     border-color: black;
     width: 600px;
     height: 300px;
+    color: white;
+}
+.cor-solida{
+    background-color:rgb(25, 26, 31);
 }
 
+.cor-solida-transparencia{
+    background-color:rgb(25, 26, 31, 0.6);
+}
+
+.cor-solida-transparencia{
+    background-color:rgb(25, 26, 31, 0.6);
+}
+
+.imagem{
+    background-image: url("./schnauzer-gigante.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:rgb(25, 26, 31, 0.6);
+    text-shadow: 2px 2px 8px black;
+}
+
+.imagem-repetida{
+    background-image: url("./schnauzer-filhote.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
 
 
 /*Questão2) bordas*/
