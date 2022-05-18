@@ -19,14 +19,17 @@ main {
     color: white;
 }
 .cor-solida{
+    width: 500px;
     background-color:rgb(25, 26, 31);
 }
 
-.cor-solida-transparencia{
-    background-color:rgb(25, 26, 31, 0.6);
+.cor-gradiente{
+    width: 500px;
+    background:radial-gradient(circle  at 30% 0%,#414345 10%, #232526 50%)
 }
 
 .cor-solida-transparencia{
+    width: 500px;
     background-color:rgb(25, 26, 31, 0.6);
 }
 
