@@ -8,7 +8,55 @@
 body {
     width: 100vw;
     height: 100vh;
+    padding: 2vmin 4vmin;
     background:radial-gradient(circle farthest-side at 35% 0%,#414345 15%, #1C1E23 65%);
-    background-clip: padding-box;
-    color: #242524;
+    color: #dddddd ;
 }
+
+nav {
+    padding:2vw 2vh;
+    box-sizing: border-box;
+    height: 10vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    /* background-color: hotpink;  */
+}
+
+.logo{
+   
+    text-align: center;
+    font-size:3vw;
+    line-height: 2.3vw;
+    font-weight: 600;
+    /*background-color: green;*/
+}
+
+nav ul{
+    width: 30vw;
+    height: 50px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    list-style:none;
+    font-size:1.3vw;
+    /* background-color: red;  */
+}
+
+nav a {
+    color: #dddddd ;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    
+    color: #dddddd ;
+   /*  font-size:1.5vw;  */
+    
+    border: #dddddd;
+    border-bottom:solid;
+    border-width: 0.2vmin;
+    line-height: 10vw;
+    /* text-decoration: underline; */
+}
+
