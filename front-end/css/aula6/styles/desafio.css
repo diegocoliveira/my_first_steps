@@ -4,59 +4,111 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "rain";
+    src: url("../fonts/rain-webfont.woff2");
+}
+
 
 body {
     width: 100vw;
     height: 100vh;
-    padding: 2vmin 4vmin;
-    background:radial-gradient(circle farthest-side at 35% 0%,#414345 15%, #1C1E23 65%);
-    color: #dddddd ;
+    
+    background: radial-gradient(circle farthest-side at 35% 0%, #414345 15%, #1C1E23 65%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #dddddd;
 }
 
 nav {
-    padding:2vw 2vh;
+    padding: 0vw 5vw; 
     box-sizing: border-box;
-    height: 10vh;
+    height: 25vh;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    /* background-color: hotpink;  */
+     /* background-color: blueviolet;   */
 }
 
-.logo{
-   
+.logo {
+    font-family: 'rain';
     text-align: center;
-    font-size:3vw;
+    font-size: 3vw;
     line-height: 2.3vw;
+    letter-spacing: 0.5vmin;
     font-weight: 600;
-    /*background-color: green;*/
+    /* background-color: green; */
 }
 
-nav ul{
+
+nav ul {
     width: 30vw;
-    height: 50px;
+   
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-    list-style:none;
-    font-size:1.3vw;
-    /* background-color: red;  */
+    list-style: none;
+    font-size: 1.3vw;
 }
 
 nav a {
-    color: #dddddd ;
+    color: #dddddd;
     text-decoration: none;
+    
+}
+nav ul a {
+    
+    /* background-color: red;  */
+    padding-bottom: 1vh;
 }
 
 nav ul a:hover {
-    
-    color: #dddddd ;
-   /*  font-size:1.5vw;  */
-    
-    border: #dddddd;
-    border-bottom:solid;
+    border-bottom: solid;
     border-width: 0.2vmin;
-    line-height: 10vw;
-    /* text-decoration: underline; */
 }
 
+main{
+    height: 50vh;  
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.main-header{
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+#eu-sou{
+    width: 60vw;
+    font-size: 1.1vw;
+}
+
+.main{
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    font-family: 'rain';
+    text-align: center;
+    font-size: 12vw;
+    font-weight: 600;
+}
+
+.main-footer{
+    /* background-color: green; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+#princesa-papai{
+    width: 48vw;
+    font-size: 1.3vw;
+}
+
+footer{
+    height: 25vh;  
+    /* background-color: blue; */
+}
