@@ -1,0 +1,176 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.background{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid;
+    border-color: black;
+    width: 400px;
+    height: 200px;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    
+}
+.color{
+    padding-left: 20px;
+    height: 200px;
+    display: flex;
+    align-items:  center;
+    color: black;
+}
+
+.rgb-red{
+    background-color:  rgb(255, 0, 0);
+    color: #dddddd;
+}
+
+.rgb-green{
+    background-color:  rgb(0, 255, 0);
+    
+}
+
+.rgb-blue{
+    background-color:  rgb(0, 0, 255);
+    color: #dddddd;
+}
+
+.rgba-0{
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.rgba-20{
+    background-color: rgba(255, 0, 0, 0.2);
+}
+.rgba-40{
+    background-color: rgba(255, 0, 0, 0.4);
+}
+.rgba-60{
+    background-color: rgba(255, 0, 0, 0.6);
+}
+.rgba-80{
+    background-color: rgba(255, 0, 0, 0.8);
+}
+.rgba-100{
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.hex-red{
+    background-color: #ff0000;
+}
+.hex-green{
+    background-color: #00ff00;
+}.hex-blue{
+    background-color: #0000ff;
+    color: #dddddd;
+}
+
+.hex-0{
+    background-color: #ff000000;
+}
+
+.hex-20{
+    background-color: #ff000033;
+}
+
+.hex-40{
+    background-color: #ff000066;
+}
+
+.hex-60{
+    background-color: #ff000099;
+}
+
+.hex-80{
+    background-color: #ff0000CC;
+}
+
+.hex-100{
+    background-color: #ff0000FF;
+}
+
+.hsl-h-0{
+    background-color: hsl(0, 100%, 50%);
+}
+.hsl-h-60{
+    background-color: hsl(60, 100%, 50%);
+}
+.hsl-h-120{
+    background-color: hsl(120, 100%, 50%);
+}
+.hsl-h-180{
+    background-color: hsl(180, 100%, 50%);
+}
+.hsl-h-240{
+    background-color: hsl(240, 100%, 50%);
+}
+.hsl-h-300{
+    background-color: hsl(300, 100%, 50%);
+}
+
+.hsl-s-0{
+    background-color: hsl(0, 0%, 50%);
+}
+.hsl-s-20{
+    background-color: hsl(0, 20%, 50%);
+}
+.hsl-s-40{
+    background-color: hsl(0, 40%, 50%);
+}
+.hsl-s-60{
+    background-color: hsl(0, 60%, 50%);
+}
+.hsl-s-80{
+    background-color: hsl(0, 80%, 50%);
+}
+.hsl-s-100{
+    background-color: hsl(0, 100%, 50%);
+}
+
+.hsl-l-0{
+    background-color: hsl(0, 100%, 0%);
+    color: #dddddd;
+}
+.hsl-l-20{
+    background-color: hsl(0, 100%, 20%);
+    color: #dddddd;
+}
+.hsl-l-40{
+    background-color: hsl(0, 100%, 40%);
+    color: #dddddd;
+}
+.hsl-l-60{
+    background-color: hsl(0, 100%, 60%);
+    color: #dddddd;
+}
+.hsl-l-80{
+    background-color: hsl(0, 100%, 80%);
+    color: #dddddd;
+}
+.hsl-l-100{
+    background-color: hsl(0, 100%, 100%);
+
+}
+
+.hsla-0{
+    background-color: hsla(0, 100%, 50%,0);
+}
+.hsla-20{
+    background-color: hsla(0, 100%, 50%,0.2);
+}
+.hsla-40{
+    background-color: hsla(0, 100%, 50%,0.4);
+}
+.hsla-60{
+    background-color: hsla(0, 100%, 50%,0.6);
+}
+.hsla-80{
+    background-color: hsla(0, 100%, 50%,0.8);
+}
+.hsla-100{
+    background-color: hsla(0, 100%, 50%,1);
+}
