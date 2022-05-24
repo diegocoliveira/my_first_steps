@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 8 - CSS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <section class="column">
+            <div class="title">
+                <h1>FLEXBOX </h1>
+            </div>
+            <div class="title">
+                <h1>flex-direction</h1>
+            </div>
+            <div class="title">
+                <h3>justify-content:</h3>
+                <h2>flex-start (Default)</h2>
+            </div>
+            <div class="title">
+                <h3>justify-content:</h3>
+                <h2>flex-end</h2>
+            </div>
+            <div class="title">
+                <h3>justify-content:</h3>
+                <h2>center</h2>
+            </div>
+            <div class="title">
+                <h3>justify-content:</h3>
+                <h2>space-around</h2>
+            </div>
+            <div class="title">
+                <h3>justify-content:</h3>
+                <h2>space-between</h2>
+            </div>
+            <div class="title">
+                <h3>align-items:</h3>
+                <h2>flex-start</h2>
+            </div>
+            <div class="title">
+                <h3>align-items:</h3>
+                <h2>flex-end</h2>
+            </div>
+            <div class="title">
+                <h3>align-items:</h3>
+                <h2>center</h2>
+            </div>
+            <div class="title">
+                <h3>align-items:</h3>
+                <h2>stretch (Default)</h2>
+            </div>
+            <div class="title">
+                <h3>align-items:</h3>
+                <h2>baseline</h2>
+            </div>
+            <div class="title">
+                <h3>#B{align-selfie:flex-start;}</h3>
+                <h3>#D{align-selfie:flex-end;}</h3>
+                
+            </div>
+            <div class="title">
+                <h3>#B{order:1;}</h3>
+                <h3>#C{order:-1;}</h3>
+            </div>
+           
+        </section>
+        <section class="column">
+            <div class="title">
+                <h1>ROW (Default)</h1>
+            </div>
+            <div class="box flex-direction-row">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row justify-content-flex-start">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row justify-content-flex-end">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row justify-content-center">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row justify-content-space-around">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row justify-content-space-between">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row align-items-flex-start">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row align-items-flex-end">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row align-items-center">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row align-items-stretch">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row align-items-baseline">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row align-selfie">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row order">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+           
+        </section>
+        <section class="column">
+            <div class="title">
+                <h1>ROW-REVERSE</h1>
+            </div>
+            <div class="box flex-direction-row-reverse ">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row-reverse justify-content-flex-start">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row-reverse justify-content-flex-end">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row-reverse justify-content-center ">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row-reverse justify-content-space-around">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row-reverse justify-content-space-between">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row-reverse align-items-flex-start">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row-reverse align-items-flex-end">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row-reverse align-items-center">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row-reverse align-items-stretch">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row-reverse align-items-baseline">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row-reverse align-selfie">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-row-reverse order">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+
+        </section>
+        <section class="column">
+            <div class="title">
+                <h1>COLUMN</h1>
+            </div>
+            <div class="box flex-direction-column">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column justify-content-flex-start">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column justify-content-flex-end">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column justify-content-center">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column justify-content-space-around">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column justify-content-space-between">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column align-items-flex-start">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column align-items-flex-end">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column align-items-center">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column align-items-stretch">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column align-items-baseline">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column align-selfie">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column order">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+
+        
+          
+        </section>
+        <section class="column">
+            <div class="title">
+                <h1>COLUMN-REVERSE</h1>
+            </div>
+            <div class="box flex-direction-column-reverse ">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column-reverse justify-content-flex-start">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column-reverse justify-content-flex-end">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column-reverse justify-content-center">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column-reverse justify-content-space-around">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column-reverse justify-content-space-between">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column-reverse align-items-flex-start">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column-reverse align-items-flex-end">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column-reverse align-items-center">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column-reverse align-items-stretch">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column-reverse align-items-baseline">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            
+            <div class="box flex-direction-column-reverse align-selfie">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+            <div class="box flex-direction-column-reverse order">
+                <div class="item-a">A</div>
+                <div class="item-b">B</div>
+                <div class="item-c">C</div>
+                <div class="item-d">D</div>
+            </div>
+        </section>
+
+
+    </main>
+</body>
+
+</html>
