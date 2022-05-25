@@ -1,0 +1,217 @@
+/*
+paleta de cores baseado na logo da Elomoodas
+#0BC4D9 #07D9D9 #B6F2EC #F24F13 #F2BFBB
+
+tema1 - #EB490E #FAEBEA
+tema2 - #1D438A #00E6D7
+tema3 - #762204 #FFF1F0
+tema4 - #000A0C #BFFFF9
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #BFFFF9; */
+    /*fonte e cor predominantes dos textos*/
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+    font-size: 1.8vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+
+header{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+#sub-header{
+    width: 100vw;
+    height: 5vh;
+    background-color: #FAEBEA;
+    color: #EB490E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+}
+#header-main{
+    width: 100vw;
+    height: 7vh;
+    background-color: #00E6D7;
+    color: #1D438A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+
+}
+
+h1{
+    font-family: 'Open Sans';
+    font-family: 'Source Serif Pro';
+    font-weight: 300;
+}
+
+#header-img{
+    background-image: url("../images/sonaraguamar.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 30vh;
+    width: 100vw;
+    height: 30vh;
+}
+
+#search{
+    width: 35vw;
+    height: 5vh;
+}
+
+
+#about{
+    /* margin-top: 45vh; */
+    padding: 2vh 3vw;
+    width: 98vw;
+    min-height: 30vh;
+    background-color: #FFF1F0;
+    color:#762204;
+    text-align: justify;
+    /* box-shadow: 0.3vmin 0.3vmin 2vmin 0 #3E433D; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1vh;
+}
+
+
+#photo{
+    /*1280 1600*/
+    width: 30vmin;
+    height: 44vmin;
+    background-image: url("../images/eloina.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50% 50% 0% 0%;
+     /* border-radius: 50%;  */
+    /* border: 0.4vmin solid; */
+    /* border-color: white; */
+    box-shadow: 0.5vmin 0.5vmin 1vmin 0 #3E433D;
+}
+
+
+
+#social-media{
+    margin-top: 11vmin;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+#social-media img{
+    width: 3vmin;
+    opacity: 0.6;
+}
+
+#social-media img:hover{
+    opacity: 1;
+}
+
+.section-title{
+    margin-top: 4vh;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vmin;
+}
+
+#timeline{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7vw;
+  
+}
+
+#timeline-left{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+#timeline-right{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+#timeline-line{
+    width: 0.2vw;
+    background: linear-gradient(to top, #E4E9E3 0%, #3E433D 50%, #2C3339 100%);
+}
+
+.card-left, .card-right{
+    width: 28vw;
+    min-height: 30vh;
+    background-color: white;
+    box-shadow: 0.3vmin 0.3vmin 2vmin 0 #3E433D;
+
+}
+.card-title{
+    height: 8vh;
+    background-color: #2C3339;
+    color: #E4E9E3;
+    position: relative;
+    display: flex;
+
+}
+
+.card-left .triangle {
+    width: 0;
+    height: 0;
+    border-top: 0vh solid transparent;
+    border-left: 4vw solid #2C3339;
+    border-bottom: 4vh solid transparent;
+    position: absolute;
+    left: 28vw;
+}
+.card-left .circle {
+    background: #2C3339;
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    top:-1.5vh;
+    left: 34.1vw; /*28 vw tamanho do card + gap 7vw timeline +0.1 metade line - 1 metade circle*/
+}
+
+
+.card-right .triangle {
+    width: 0;
+    height: 0;
+    border-top: 0vh solid transparent;
+    border-right: 4vw solid #2C3339;
+    border-bottom: 4vh solid transparent;
+    position: absolute;
+    right: 28vw;
+}
+.card-right .circle {
+    background: #2C3339;
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    top:-1.5vh;
+    right: 34.1vw; /*28 vw tamanho do card + gap 7vw timeline +0.1 metade line - 1 metade circle*/
+}
