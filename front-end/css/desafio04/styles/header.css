@@ -1,0 +1,71 @@
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5vw;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  
+  #header-left, #header-right {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+  }
+  
+  #header-left h1 {
+    letter-spacing: 0.3vw;
+    /* font-weight: 500; */
+    font-size: 1.5vw;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1vw;
+    list-style: none;
+    gap: 1vw;
+  }
+  
+  header a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 0 solid;
+    padding-bottom: 0.5vh;
+  }
+  
+  nav a:hover { 
+    padding-bottom: 0.5vh;
+    border-bottom: 0.2vh solid;
+  }
+  
+  #login div {
+    display: flex ;
+    gap: 0.5vw;
+    font-size: 1.2vw;
+   
+  }
+  
+  #login img{
+    width: 2vw;
+  }
+  
+  #btn-order-now{
+    font-size: 1.3vw;
+    padding: 0.5vw;
+    border-radius: 2vw;
+    border: 0.2vw solid black;
+    background-color: #FF4A06;
+    cursor: pointer;
+  }
+  
+  #btn-order-now:hover{
+    color: white;
+    background-color: black;
+    
+  }

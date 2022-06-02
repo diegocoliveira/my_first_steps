@@ -1,0 +1,39 @@
+#main-1{
+    width: 100vw;
+    min-height: 90vmin;
+    display: flex;
+  }
+  
+  #main-1-left{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    background-color: #FF4A06;
+    color:white;
+    font-size: 3vw;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #btn-order-online{
+    font-size: 1.2vw;
+    padding: 0.5vw 1.3vw;
+    border: 0.15vw solid black;
+    background-color: #FF4A06;
+    cursor: pointer;
+  }
+  
+  #btn-order-online:hover{
+    color: white;
+    background-color: black;
+    
+  }
+  
+  #main-1-right{
+    background-image: url('../images/imagem01.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:50vw 0;
+    background-size: contain;
+    width: 50vw;
+  }

@@ -1,0 +1,131 @@
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -400%;
+  }
+  98% {
+    left: -400%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+ol,
+li,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}
+
+.carousel__viewport {
+  display: flex;
+  /* overflow-x: scroll; */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /* counter-reset: item; */
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+  position: relative;
+  flex-shrink: 0; /*garante que o item não deve encolher*/
+  width: 300px;
+  height: 300px;
+  background-color: #f99;
+}
+
+.carousel__slide:nth-child(even) {
+  background-color: #99f;
+}
+
+ .carousel__snapper { 
+/* .carousel__slide { */
+  position: relative;
+  width: 300px;
+  scroll-snap-align: center;
+  animation-name: tonext, snap;
+
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.carousel__slide:last-child .carousel__snapper {
+  animation-name: tostart, snap;
+}
+
+/* .carousel__snapper {
+      animation-name: none;
+    } */
+
+/* .carousel:hover .carousel__snapper,
+  .carousel:focus-within .carousel__snapper {
+    animation-name: none;
+  } */
+
+img {
+  
+  /* flex-shrink: 0; /*garante que o item não deve encolher */
+  width: 296px;
+  height: 296px;
+  object-fit: contain;
+  object-position: center;
+  
+}

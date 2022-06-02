@@ -1,195 +1,128 @@
-/*
-paleta de cores baseado na logo da Elomoodas
-#0BC4D9 #07D9D9 #B6F2EC #F24F13 #F2BFBB
-
-tema1 - #EB490E #FAEBEA
-tema2 - #102A5C #00BFB2
-tema3 - #762204 #FFF1F0
-tema4 - #000A0C #BFFFF9
-
-*/
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    /* background-color: #BFFFF9; */
-    /*fonte e cor predominantes dos textos*/
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 400;
-    font-size: 1.8vmin;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #102A5C;
-    color: #00BFB2;
-    gap: 3vh;
-    overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #74abe2, #5563de);
+  font-family: "Ropa Sans", sans-serif;
 }
 
+.slider {
+  background-color: white;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
-header {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+.slides {
+  width: 4 * 32vw;
+  height: 30vw;
+  display: flex;
+  gap: 2vw;
+
+  /*no scroll escolhe qual imagem é predominante e ajusta para essa imagem*/
+  scroll-snap-type: x mandatory;
+  /*Adiciona um efeito de rolagem suave*/
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  overflow-x: none;
+  overflow-y: hidden;
+  scrollbar-color: black transparent;
+  scrollbar-width: thin;
+  position: relative;
+  pointer-events: fill;
+}
+
+@media (hover: hover) {
+  .slides {
+    animation-name: tonext;
+    animation-timing-function: ease;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes tonext {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -32vw;
+  }
+  45% {
+    margin-left: -32vw;
+  }
+  50% {
+    margin-left: -64vw;
+  }
+  70% {
+    margin-left: -64vw;
+  }
+  75% {
+    margin-left: -96vw;
+  }
+  95% {
+    margin-left: -96vw;
+  }
+  99% {
+    margin-left: 0;
+  }
+ 
+  
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slides {
+    animation-name: none;
+  }
+}
+
+.slides img {
+  scroll-snap-align: start; /*a imagem mandatory ficar no inicio*/
+  flex-shrink: 0; /*garante que o item não deve encolher*/
+  width: 30vw;
+  height: 30vw;
+  object-fit: contain;
+  object-position: center;
+  pointer-events: none;
 
 }
 
-#sub-header {
-    width: 100vw;
-    height: 5vh;
-    background-color: #FAEBEA;
-    color: #EB490E;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+.slider nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5vw;
 }
 
-#sub-header div{
-    display: flex;
-    align-items: center;
-    gap: 0.5vw;
+.slider a {
+  display: inline-flex;
+  width: 1vw;
+  height: 1vw;
+  background: white;
+  border: 1px solid;
+  color: black;
+  position: relative;
+  top: -2vw;
+  z-index: 3;
+  text-decoration: none;
+  border-radius: 50%;
 }
 
-#sub-header .icon{
-    width: 1.5vw;
+.scrool-none {
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
-#sub-header a {
-    text-decoration: none;
-    color:#EB490E;
-}
-
-#header-main {
-    width: 100vw;
-    height: 7vh;
-    background-color: #00BFB2;
-    color: #1D438A;
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5vw;
-}
-
-#header-main div{
-    display: flex;
-    align-items: center;
-    gap: 0.5vw;
-}
-
-#header-main .icon{
-    width: 2vw;
-}
-
-#header-main a {
-    text-decoration: none;
-    /* color:#EB490E; */
-}
-
-h1, h2 {
-    font-family: 'Open Sans';
-    font-family: 'Source Serif Pro';
-    font-weight: 300;
-}
-
-#img-header {
-    width: 100vw;
-    height: 30vh;
-    object-fit: fill;
-    overflow: hidden;
-}
-
-
-#search {
-    width: 35vw;
-    height: 5vh;
-}
-
-
-#about,
-main {
-    /* margin-top: 45vh; */
-    padding: 10vh 3vw;
-    width: 100vw;
-    background-color: #FFF1F0;
-    color: #762204;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10vh;
-}
-
-#advantages{
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-}
-
-#advantages div{
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-}
-
-#advantages .icon{
-    width: 3vw;
-}
-
-#advantages div p{
-    font-size: 1.5vmin;
-    line-height: 3vh;
-}
-
-#advantages div p::first-line{
-    font-size: 2.5vmin;
-}
-
-#photo {
-    /*1280 1600*/
-    width: 30vmin;
-    height: 44vmin;
-    background-image: url("../images/eloina.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50% 50% 0% 0%;
-    box-shadow: 0.5vmin 0.5vmin 1vmin 0 #3E433D;
-}
-
-.container-product {
-    width: 65vw;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2vw;
-    justify-content: space-around;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card-img {
-     width: 35vmin;
-     width: 35vmin;
-    overflow: hidden;
-}
-
-.card-img img{
-    width: 34vmin;
-    height: 34vmin;
-    object-fit: cover;
-    object-position:center;
-    transition: transform .5s ease;
-}
-
- .card-img img:hover{
-    transform: scale(1.5);
+.nav-none a {
+  display: none;
 }

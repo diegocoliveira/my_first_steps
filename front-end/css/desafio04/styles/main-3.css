@@ -1,0 +1,50 @@
+#main-3{
+    margin-top: -25vh; /* tirando a diferença em relação ao top dado pelo main-2 de 25vh*/
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  #main-3 > div{
+    background-color: #093BF3;
+    width: 40vw;
+    padding: 0 10vw;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+  }
+  
+  #main-3 h1{
+    color: #FEFC50;
+    font-size: 1.8vw;
+    font-weight: 500;
+    line-height: 5vh;
+    letter-spacing: 0.2vw;
+  } 
+  
+  #main-3 p{
+    font-size: 1.2vw;
+    line-height: 3.5vh; 
+    color: white;
+  }
+  
+  
+  #btn-our-story{
+    font-size: 1.2vw;
+    padding: 0.5vw 2vw;
+    border: 0.15vw solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+  
+  #btn-our-story:hover{
+    color: black;
+    background-color: #FEFC50;
+  
+    
+  }

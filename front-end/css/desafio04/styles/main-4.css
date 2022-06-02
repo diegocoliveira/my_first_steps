@@ -1,0 +1,42 @@
+#main-4{
+    width: 100vw;
+    min-height: 60vmin;
+    display: flex;
+  }
+  
+  #main-4-left{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    background-color: #FF4A06;
+    color:white;
+    font-size: 1.26vw;
+    line-height: 6vh;
+    padding: 8vh 6vw;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4vh;
+  }
+  
+  #btn-explore-menu{
+    font-size: 1.2vw;
+    padding: 0.5vw 1.3vw;
+    border: 0.15vw solid black;
+    background-color: #FF4A06;
+    cursor: pointer;
+  }
+  
+  #btn-explore-menu:hover{
+    color: white;
+    background-color: black;
+    
+  }
+  
+  #main-4-right{
+    background-image: url('../images/imagem06.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:50vw 0;
+    background-size: contain;
+    width: 50vw;
+  }

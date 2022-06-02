@@ -1,217 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abrigo Para Animais</title>
+    <meta name="author" content="Diego Chaves de Oliveira" />
+    <meta
+      name="description"
+      content="Site exemplo de abrigos de animais (usando carrossel de imagens usando somente css)"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elo Moda Praia</title>
-    <meta name="author" content="Diego Chaves de Oliveira">
-    <meta name="description" content="e-commerce moda praia">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
 
-<body>
-    <header>
-
-        <img id="img-header" src="./images/sonaraguamar.jpg">
-        <section id="sub-header">
-            <p>15% de desconto na primeira compra</p>
-            <div>
-                <img class="icon" src="./images/whatapps.svg">
-                <a href="">Fale pelo whatsapp</a>
-            </div>
-
-            <div>
-                <img class="icon" src="./images/duvida.svg">
-                <a href="">Tire suas dúvidas</a>
-            </div>
-
-        </section>
-        <section id="header-main">
-            <h1>ELÔ MODA PRAIA</h1>
-            <input id="search" type="search" placeholder="Pesquisar ... " />
-            <div>
-                <img class="icon" src="./images/login.svg">
-                <a href="">Login</a>
-            </div>
-            <a href="">
-                <div>
-                    <img class="icon" src="./images/cestinha.svg">
-                    <p>2</p>
-                </div>
-            </a>
-        </section>
-    </header>
-
-    <section id="advantages">
-        <div>
-            <img class="icon" src="./images/pacote.svg">
-            <p>
-                Frete Grátis <br />
-                Confira Condições
-            </p>
-        </div>
-        <div>
-            <img class="icon" src="./images/mapa.svg">
-            <p>
-                Enviamos <br />
-                para todo Brasil
-            </p>
-        </div>
-
-        <div>
-            <img class="icon" src="./images/credito.svg">
-            <p>
-                Até em 12x sem Juros <br />
-                10% off no Boleto
-            </p>
-        </div>
-
-        <div>
-            <img class="icon" src="./images/seguro.svg">
-            <p>
-                100% Seguro <br />
-                Certificado SSL
-            </p>
-        </div>
-
-
-    </section>
-
-    <main>
-        <h1>Lançamentos que você vai amar</h1>
-        <section class="container-product">
-            <div class="card">
-                <div class="card-img">
-                    <img src="./images/produto_01.jpeg" />
-                </div>
-                <p>Nome Produto</p>
-                <p>R$ 89,00</p>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="./images/produto_02.jpeg" />
-                </div>
-                <p>Nome Produto</p>
-                <p>R$ 89,00</p>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="./images/produto_03.jpeg" />
-                </div>
-                <p>Nome Produto</p>
-                <p>R$ 89,00</p>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="./images/produto_04.jpeg" />
-                </div>
-                <p>Nome Produto</p>
-                <p>R$ 89,00</p>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="./images/produto_05.jpeg" />
-                </div>
-                <p>Nome Produto</p>
-                <p>R$ 89,00</p>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="./images/produto_06.jpeg" />
-                </div>
-                <p>Nome Produto</p>
-                <p>R$ 89,00</p>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="./images/produto_07.jpeg" />
-                </div>
-                <p>Nome Produto</p>
-                <p>R$ 89,00</p>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="./images/produto_08.jpeg" />
-                </div>
-                <p>Nome Produto</p>
-                <p>R$ 89,00</p>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="./images/produto_09.jpeg" />
-                </div>
-                <p>Nome Produto</p>
-                <p>R$ 89,00</p>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="./images/produto_10.jpeg" />
-                </div>
-                <p>Nome Produto</p>
-                <p>R$ 89,00</p>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="./images/produto_11.jpeg" />
-                </div>
-                <p>Nome Produto</p>
-                <p>R$ 89,00</p>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="./images/produto_12.jpeg" />
-                </div>
-                <p>Nome Produto</p>
-                <p>R$ 89,00</p>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="./images/produto_13.jpeg" />
-                </div>
-                <p>Nome Produto</p>
-                <p>R$ 89,00</p>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="./images/produto_14.jpeg" />
-                </div>
-                <p>Nome Produto</p>
-                <p>R$ 89,00</p>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="./images/produto_15.jpeg" />
-                </div>
-                <p>Nome Produto</p>
-                <p>R$ 89,00</p>
-            </div>
-        </section>
-        <h1>Siga-nos @elomodapraia </h1>
-    </main>
-    <section>
-        <h1>Sobre Eu</h1>
-    </section>
-    <section id="about">
-        <div id="photo"></div>
-        <p>Lorem ipsum justo libero quis posuere convallis taciti porttitor mollis odio mauris ad, metus iaculis laoreet
-            ultricies tellus augue varius donec quisque suspendisse venenatis. nullam diam pulvinar aenean aliquet,
-            sociosqu senectus fusce diam, scelerisque consequat metus. mi tincidunt at varius sed conubia nostra
-            pellentesque cubilia, rutrum lobortis fames fermentum ac accumsan. tempor arcu felis lorem accumsan
-            curabitur hac odio, inceptos consequat curae fames ac hac sem mattis, sagittis porta volutpat ut feugiat
-            ornare. sagittis congue ornare dolor ipsum adipiscing purus, potenti sapien varius iaculis malesuada velit
-            felis, bibendum cursus senectus torquent sagittis. </p>
-    </section>
-
-</body>
-
+  <body>
+    <div class="slider">
+      <div class="slides ">
+        <img id="slide-1" src="./images/animais01.webp" />
+        <img id="slide-2" src="./images/animais02.webp" />
+        <img id="slide-3" src="./images/animais03.jpeg" />
+        <img id="slide-4" src="./images/animais04.jpeg" />
+      </div>
+      <nav >
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+        <a href="#slide-4"></a>
+      </nav>
+    </div>
+    
+  </body>
 </html>

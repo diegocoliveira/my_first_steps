@@ -1,0 +1,38 @@
+#main-2{
+    background-color: #FEFC50;
+    width: 80vw;
+    display: flex;
+    position: relative;
+    top: -25vh;
+  }
+  
+  #main-2-left, #main-2-right{
+    width:40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #main-2-left img{
+    width: 40vw;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #main-2-right div{
+     width: 25vw;
+  }
+  
+  #main-2-right h2{
+    color: #093BF3;
+    font-size: 1.9vw;
+    font-weight: 500;
+    line-height: 5vh;
+  } 
+  
+  #main-2-right p{
+    margin-top: 4vh;
+    font-size: 1.2vw;
+     line-height: 3.5vh; 
+  }
