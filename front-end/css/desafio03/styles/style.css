@@ -1,128 +1,14 @@
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
 body {
   width: 100vw;
-  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to bottom, #74abe2, #5563de);
-  font-family: "Ropa Sans", sans-serif;
-}
-
-.slider {
-  background-color: white;
-  width: 30vw;
-  height: 30vw;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.slides {
-  width: 4 * 32vw;
-  height: 30vw;
-  display: flex;
-  gap: 2vw;
-
-  /*no scroll escolhe qual imagem é predominante e ajusta para essa imagem*/
-  scroll-snap-type: x mandatory;
-  /*Adiciona um efeito de rolagem suave*/
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-
-  overflow-x: none;
-  overflow-y: hidden;
-  scrollbar-color: black transparent;
-  scrollbar-width: thin;
-  position: relative;
-  pointer-events: fill;
-}
-
-@media (hover: hover) {
-  .slides {
-    animation-name: tonext;
-    animation-timing-function: ease;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-  }
-}
-
-@keyframes tonext {
-  0% {
-    margin-left: 0;
-  }
-  20% {
-    margin-left: 0;
-  }
-  25% {
-    margin-left: -32vw;
-  }
-  45% {
-    margin-left: -32vw;
-  }
-  50% {
-    margin-left: -64vw;
-  }
-  70% {
-    margin-left: -64vw;
-  }
-  75% {
-    margin-left: -96vw;
-  }
-  95% {
-    margin-left: -96vw;
-  }
-  99% {
-    margin-left: 0;
-  }
- 
-  
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .slides {
-    animation-name: none;
-  }
-}
-
-.slides img {
-  scroll-snap-align: start; /*a imagem mandatory ficar no inicio*/
-  flex-shrink: 0; /*garante que o item não deve encolher*/
-  width: 30vw;
-  height: 30vw;
-  object-fit: contain;
-  object-position: center;
-  pointer-events: none;
-
-}
-
-.slider nav {
-  display: flex;
-  justify-content: center;
-  gap: 0.5vw;
-}
-
-.slider a {
-  display: inline-flex;
-  width: 1vw;
-  height: 1vw;
-  background: white;
-  border: 1px solid;
-  color: black;
-  position: relative;
-  top: -2vw;
-  z-index: 3;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-.scrool-none {
-  overflow-x: hidden;
-  overflow-y: visible;
-}
-
-.nav-none a {
-  display: none;
+  flex-direction: column;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  color: #3A54B4;
 }

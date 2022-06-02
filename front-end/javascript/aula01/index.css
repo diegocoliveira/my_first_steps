@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 5px 15px;
+    border: 0.15vw solid black;
+    background-color: #FF4A06;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+
+}
