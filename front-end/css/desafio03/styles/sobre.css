@@ -1,0 +1,49 @@
+#sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+    background-color: #FFFFFF;
+    gap: 5vw;
+}
+
+#sobre div{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 3vmin;
+  
+    
+}
+
+#sobre h1{
+    font-size: 6.7vmin;
+    font-weight: 600;
+}
+
+#sobre p{
+    width: 20vw;
+    font-size: 1.53vmin;
+    /* line-height:2vmin; */
+   
+}
+
+#sobre img{
+    width: 45vmin;
+    border-radius: 50%;
+}
+
+#sobre button{
+    width: 14vmin;
+    background-color: #3A54B4;
+    color:#FEF7ED;
+    padding: 1vh 1vh;
+    border: 0;
+    font-size: 1.5vmin;
+}
+
+#sobre button:hover{
+    filter: opacity(60%);
+}
