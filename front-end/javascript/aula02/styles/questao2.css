@@ -41,7 +41,6 @@ input {
 
 }
 
-
 #range1, #range2 {
     width: 35.3vw;
     height: 15px;
@@ -87,7 +86,7 @@ input {
 }
 
 
-#comparar {
+#compare {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     margin-top: 10px;
@@ -102,5 +101,22 @@ input {
 #comparar:hover {
     color: white;
     background-color: black;
+}
 
+
+
+span{
+    font-size: 1.5vw;
+}
+
+#item1{
+    color:#357E38
+}
+
+#item2{
+    color: #CD372C;
+}
+
+#result{
+    font-weight: 600;
 }

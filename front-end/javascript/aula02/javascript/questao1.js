@@ -4,8 +4,8 @@ const result = document.querySelector("#result");
 const balanca = document.querySelector("#balanca");
 
 document.querySelector("#comparar").onclick = function () {
-  let vNumber1 = parseInt(number1.value, 10);
-  let vNumber2 = parseInt(number2.value,10);
+  let vNumber1 = parseFloat(number1.value, 10);
+  let vNumber2 = parseFloat(number2.value,10);
   
   if (!isNaN(vNumber1) && !isNaN(vNumber2)) {
     if (vNumber1 > vNumber2) {
