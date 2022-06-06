@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Exercício 1 - digite a sua idade em 3 campos (DIA, MÊS e ANO), seu gênero e, após clicar em um botão de ‘verificar’ informe a quantidade de dias (aproximadamente) que faltam para a sua morte considerando a expectativa de morte fornecida pelo IBGE de 73,1 anos para homens e 80,1 anos para mulheres. ">
+        <title>Aula 2 - Questão 4</title>
+        <link rel="stylesheet" href="./styles/questao3.css">
+    </head>
+    <body>
+        <main>
+            <div>
+                <input type="number"  name="day" id="day" placeholder="dd" required>
+                <input type="number" name="month" id="month" placeholder="mm" required>
+                <input type="number" name="year" id="year" placeholder="yyyy" required>
+            </div>
+            <div>
+                <input type="radio" name="gender" value="f" id="f" checked>
+                <label for="f">Feminino</label>
+                <input type="radio" name="gender" value="m" id="m">
+                <label for="m">Masculino</label>
+            </div>
+            
+            <input type="button"  id="compute" value="Calcular">
+            <h2 id="result"></h2>
+        </main>
+        <aside>
+            <div>
+                <input type="range" id="range" min="0" max="100"  disabled/>
+                <span id="range1Value"></span>
+            </div>
+        </aside>
+        <script src="./javascript/questao3.js"></script>
+    </body>
+</html>
