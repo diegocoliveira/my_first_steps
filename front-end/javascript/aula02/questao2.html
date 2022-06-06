@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Exercício 2 - Crie uma página web que possibilite a comparação do tamanho de duas ‘strings’ e após clicar no botão comparar, mostre o resultado se o tamanho da primeira string é maior, menor ou igual à segunda string"
+    />
+    <title>Aula 2 - Questão 2</title>
+    <link rel="stylesheet" href="./styles/questao2.css" />
+  </head>
+  <body>
+    <main>
+      <div id="divString1">
+        <input type="text" name="string1" id="string1"  placeholder="Digite a string 1 ..." required />
+        <div>
+          <input type="range" name="range1" id="range1" min="0" max="100"  disabled/>
+          <span id="range1Value"></span>
+        </div>
+      </div>
+      <div id="divString2">
+        <input type="text" name="string2" id="string2"  placeholder="Digite a string 2 ..." required />
+        <div>
+          <input type="range" name="range2" id="range2" min="0" max="100"  disabled/>
+          <span id="range2Value"></span>
+        </div>
+      </div>
+      <input type="button" id="comparar" value="Comparar" />
+    </main>
+
+  
+
+    <script src="./javascript/questao2.js" defer></script>
+  </body>
+</html>
