@@ -33,7 +33,6 @@ button{
     width: 20vw;
     height: 5vh;
     color: #dddddd;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.2vmax;
     background-color: #555555;
     border-style: none;
@@ -46,9 +45,33 @@ button:hover{
     height: 5vh;
     color: #555555;
     background-color: #dddddd;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.3vmax;
     border-style: none;
     box-shadow: 0.5vw 1vh 2vmax 0.2vmax black;
 
+}
+
+input{
+    height: 5vh;
+    width: 35vw;
+    color: #555555;
+    font-size: 1.2vmax;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 0.2vh solid;
+
+}
+
+p{
+    text-align: center;
+    font-size: 1.5vw;
+    font-style: normal;
+}
+
+#alert{
+    color:#CD372C;
+}
+
+span{
+    font-weight: bold;
 }
