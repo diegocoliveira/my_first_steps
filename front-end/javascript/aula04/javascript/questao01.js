@@ -7,7 +7,7 @@ const calculate = document.querySelector("#calculate");
 alert.style.display = "none";
 result.innerHTML = "";
 imc.innerHTML = "";
-img.src = "../images/ponto-interrogacao.svg";
+img.src = "./images/ponto-interrogacao.svg";
 
 function calcularImc() {
     const weight = document.querySelector("#weight").value.replace(",", ".");
@@ -17,7 +17,7 @@ function calcularImc() {
         alert.style.display = "block";
         result.innerHTML = "";
         imc.innerHTML = "";
-        img.src = "../images/ponto-interrogacao.svg";
+        img.src = "./images/ponto-interrogacao.svg";
 
     } else {
         alert.style.display = "none";
