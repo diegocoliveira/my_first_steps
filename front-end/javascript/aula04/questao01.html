@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Questão 03 -  Menor e Maior Número Inteiro" />
-    <title>Aula 4 - Questão 3</title>
+      content="Questão 01 - Índice de Massa Corporal" />
+    <title>Aula 4 - Questão 1</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles/questao01.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   
   <body>
-    <main>
-      <h1>Questão 03 -  Menor e Maior Número Inteiro</h1>
-      <input type="text" placeholder="Digite um número não inteiro ..." id="number" />
+    <form>
+      <h1>Questão 01 - Índice de Massa Corporal</h1>
+      <input type="text" placeholder="Digite o seu peso (kg) ..." id="weight" />
+      <input type="text" placeholder="Digite a sua altura (m) ..." id="height" />
+      <button id="calculate">Calcular</button>
       <p id="alert"> O valor digitado não é um número. </p>
-      <div id="result" >
-        <p> <span id="minor"></span> é o menor número inteiro dentre o número "<span class="current"></span>" </p>
-        <p> <span id="major"></span> é o menor número inteiro dentre o número "<span class="current"></span>" </p>
-      </div>
-    </main>
-    <script src="./javascript/questao03.js"></script>
+      <p id="imc"></p>
+      <img id="img"/>
+      <p id="result"></p>
+    </form>
+    <script src="./javascript/questao01.js"></script>
   </body>
 </html>
