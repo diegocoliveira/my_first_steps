@@ -24,16 +24,16 @@ function calcularImc() {
         imc.value = (weight / (height * height)).toFixed(2);
         if (imc.value < 18.5) {
             result.innerHTML = "Abaixo do peso";
-            img.src = "../images/abaixo-peso.jpg";
+            img.src = "./images/abaixo-peso.jpg";
         } else if (imc.value >= 18.5 && imc.value <= 24.9) {
             result.innerHTML = "Peso normal";
-            img.src = "../images/peso-normal.jpg";
+            img.src = "./images/peso-normal.jpg";
         } else if (imc.value >= 25 && imc.value <= 29.9) {
             result.innerHTML = "Sobrepeso";
-            img.src = "../images/sobrepeso.jpg";
+            img.src = "./images/sobrepeso.jpg";
         } else if (imc.value >= 30) {
             result.innerHTML = "Obesidade";
-            img.src = "../images/obesidade.jpg";
+            img.src = "./images/obesidade.jpg";
         }
 
         imc.innerHTML = "IMC = " + imc.value.replace(".", ",");
