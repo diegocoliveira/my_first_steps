@@ -1,4 +1,3 @@
-
 const result = document.querySelector("#result");
 const button = document.querySelector("#button");
 result.innerHTML = "";

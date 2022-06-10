@@ -1,26 +1,19 @@
-const number = document.querySelector("#number");
-const alert = document.querySelector("#alert");
-const result = document.querySelector("#result");
-alert.style.display = "none";
-result.style.display = "none";
+const button = document.querySelector("#button");
+const select = document.querySelector("#select");
+const img = document.querySelector("#img");
 
-function inteiro() {
-    const num = number.value.replace(",",".");
-    if(isNaN(num)){
-        alert.style.display = "block";
-        result.style.display = "none";
-        
-    }else{
-        alert.style.display = "none";
-        result.style.display = "block";
-        document.querySelector("#minor").innerHTML = Math.floor(num);
-        document.querySelector("#major").innerHTML = Math.ceil(num);
-        const current = document.querySelectorAll('.current');
-        for (let i = 0; i < current.length; i++) {
-           current[i].innerHTML = num.replace(".",",");
-        }
-        
+function exibir() {
+
+    switch (select.value) {
+        case "1": img.src = "./images/celular.jpg"; break;
+        case "2": img.src = "./images/cosmeticos.webp"; break;
+        case "3": img.src = "./images/game.jpg"; break;
+        case "4": img.src = "./images/notebook.jpg"; break;
+        case "5": img.src = "./images/roupas.webp"; break;
+        default: img.src= ""; break;
     }
+
+  return true
 }
 
-number.onkeyup = inteiro;
+button.onclick = exibir;
