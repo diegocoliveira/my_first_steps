@@ -1,0 +1,23 @@
+#result{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-width: 20vw;
+    min-height: 40vh;
+}
+
+.homem{
+    background-image: url('../images/homem.jpeg');
+}
+
+.homem-idoso{
+    background-image: url('../images/homem-idoso.jpg');
+}
+
+.mulher{
+    background-image: url('../images/mulher.webp');
+}
+
+.mulher-idosa{
+    background-image: url('../images/mulher-idosa.jpg');
+}

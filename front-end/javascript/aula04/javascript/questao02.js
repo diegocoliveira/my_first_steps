@@ -13,7 +13,7 @@ function sortear() {
         if (min < max) {
             alert.innerHTML = "";
             const num = Math.floor(Math.random() * (max - min + 1) + min);
-            result.innerHTML = "O valor sorteador é = " + num;
+            result.innerHTML = "O valor sorteado é = " + num;
         } else {
             alert.innerHTML = "O valor mínimo não pode ser maior que o valor máximo."
             result.innerHTML = "";
