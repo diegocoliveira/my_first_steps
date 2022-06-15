@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Questão 01 - Formulário (Object Javascript)" />
+    <title>Aula 8 - Questão 2</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/questao1.css" />
+  </head>
+  
+  <body>
+    <form>
+      <h1>Questão 01 - Formulário (Object Javascript)</h1>
+      <input type="text"  id="name" placeholder="Digite seu nome" />
+      <fieldset>
+        <legend>Data Nascimento</legend>
+        <input type="text" id="day" placeholder="Dia" />
+        <input type="text" id="month" placeholder="Mês" />
+        <input type="text" id="year" placeholder="Ano" />
+      </fieldset>
+      <div>
+        <input type="text" id="weight" placeholder="Peso (kg)" />
+        <input type="text" id="height" placeholder="Altura (cm)" />
+        <select id="gender">
+          <option value="">Selecione o gênero</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+        </select>
+      </div>
+      <button type="button" id="submit">Enviar</button>
+      <div id="result"></div>
+      <p id="alert"></p>
+    </form>
+    <script src="./javascript/questao01.js"></script>
+  </body>
+</html>

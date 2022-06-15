@@ -1,0 +1,13 @@
+#day, #month, #year{
+    width: 7.5vw;
+    margin: 2vh 2vw;
+    text-align: center;
+}
+
+#weight, #height{
+    text-align: center;
+    width: 7.5vw;
+    margin: 2vh 2vw;
+}
+
+

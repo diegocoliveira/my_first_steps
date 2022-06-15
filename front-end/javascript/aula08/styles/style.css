@@ -10,14 +10,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 main, form{
     width: 70vw; /*metade da seção da direta (84vw)*/
     padding: 3vh 3vw;
     display:flex;
-    gap: 6vh;
+    gap: 2vh;
     flex-direction: column;
     justify-content: flex-start;
     align-items:center;
@@ -72,6 +72,18 @@ select{
     text-align: center;
 }
 
+textarea{
+    height:10vh;
+    width: 35vw;
+    color: #555555;
+    font-size: 1.2vmax;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 0.2vh solid;
+    border-right: 0.2vh solid;
+
+}
+
 #img{
     background-repeat: no-repeat;
     background-size: contain;
@@ -84,6 +96,7 @@ p{
     text-align: center;
     font-size: 1.5vw;
     font-style: normal;
+    
 }
 
 #alert{
