@@ -62,6 +62,18 @@ input{
 
 }
 
+textarea{
+    /* height:10vh;
+    width: 35vw; */
+    color: #555555;
+    font-size: 1.2vmax;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 0.2vh solid;
+    border-right: 0.2vh solid;
+
+}
+
 select{
     
     height: 5vh;
