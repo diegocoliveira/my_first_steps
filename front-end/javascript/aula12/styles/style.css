@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main, form{
+    width: 94vw; /*metade da seção da direta (84vw)*/
+    padding: 3vh 3vw;
+    display:flex;
+    gap: 6vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    box-shadow: -0.5vw 1vh 2vmax 0.2vmax black;
+}
+
+h1{
+    font-size: 1.5vw;
+}
+
+
+button{
+    width: 20vw;
+    height: 5vh;
+    color: #dddddd;
+    font-size: 1.2vmax;
+    background-color: #008CBA;
+    border-style: none;
+    box-shadow: 0.5vw 1vh 2vmax 0.2vmax black;
+
+}
+
+button:hover{
+    width: 20vw;
+    height: 5vh;
+    color: #008CBA;
+    background-color: #dddddd;
+    font-size: 1.3vmax;
+    border-style: none;
+    box-shadow: 0.5vw 1vh 2vmax 0.2vmax black;
+
+}
+
+input{
+    height: 5vh;
+    width: 35vw;
+    color: #555555;
+    font-size: 1.2vmax;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 0.2vh solid;
+
+}
+
+select{
+    
+    height: 5vh;
+    width: 20vw;
+    color: #ddd;
+    font-size: 1.2vmax;
+    background-color: #555555;
+    text-align: center;
+}
+
+#img{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 20vw;
+    
+}
+
+p{
+    width: 90vw;
+    text-align: center;
+    font-size: 1.5vw;
+    font-style: normal;
+    word-wrap: break-word;
+}
+
+#alert{
+    color:#CD372C;
+}
+
+span{
+    font-weight: bold;
+}
+
+.card{
+    width: 10vw;
+}
