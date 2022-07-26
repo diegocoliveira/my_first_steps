@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Usando asycn/await e Promise.All para acessar um api de Baralho" />
+        <title>Aula 18 - Baralho</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/style.css" />
+      </head>
+
+    <body>
+        <form>
+            <h1>Baralho</h1>
+            <strong>Deck:</strong>
+            <input type="text" name="deck" id="deck" placeholder="Informe o id do deck" />
+            <p>Cartas Restantes: <span id="remaining"></span></p>
+            <div id="comandos">
+                <button type="button" id="shuffle">Criar/Embaralhar Baralho</button>
+                <button type="button" id="drawSync">Comprar Carta (Sequencial)</button>
+                <button type="button" id="drawAsync">Comprar Carta (Assíncrona)</button>
+            </div>
+            <div id="cards">
+
+            </div>
+            <div id="result"></div>
+            <p id="alert"></p>
+        </form>
+        <script src="./javascript/questao01.js"></script>
+    </body>
+</html>
