@@ -1,5 +1,5 @@
-import Bingo from "./modules/bingo.mjs";
-import Sheet from "./modules/sheet.mjs";
+import Bingo from "./modules/bingo.js";
+import Sheet from "./modules/sheet.js";
 
 const container = document.querySelector("#container");
 const btnAddSheet = document.querySelector("#add-sheet");
